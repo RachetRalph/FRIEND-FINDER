@@ -1,0 +1,15 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "FriendFinder app matches you with your perfect friend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Friend",
+    "Finder"
+  ],
+  "author": "Ralph A.",
+  "license": "ISC"
+}
