@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Add the application routes
-// require(pasth.join(__dirname, './app/routing/apiRoutes'))(app);
+// require(path.join(__dirname, './app/routing/apiRoutes'))(app);
+
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Starts the server 
