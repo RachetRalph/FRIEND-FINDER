@@ -1,6 +1,6 @@
 // Dependencies
 const express = require("express");
-const bodyparser = require("body-parser");
+const bodyParser = require("body-parser");
 const path = require("path");
 
 const app = express(); 
@@ -10,9 +10,9 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json());
 
-// Connects apiRoutes and htmlRoutes to enable usage of dependencies 
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+// Add the application routes
+// require(pasth.join(__dirname, './app/routing/apiRoutes'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Starts the server 
 app.listen(PORT, function() {  
